@@ -1,0 +1,105 @@
+.weather-forecast {
+  text-align: center;
+  padding: 20px;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  position: relative;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #ff4c4c;
+  width: 20px;
+  height: 20px;
+  animation: spin 1s linear infinite;
+  position: absolute;
+  left: 20px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.forecast-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.forecast-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
+  max-width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.date {
+  font-weight: bold;
+}
+
+.mainc {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.search-box {
+  padding: 4px 10px;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 10px;
+  height: 28px;
+  border: 1px solid #ff4c4c;
+}
+button.forecast-button {
+  height: 38px;
+  padding: 6px 10px;
+  margin-right: 10px;
+  color: #fff;
+  background: #fc4a11;
+  outline: none;
+  border-radius: 5px;
+  border: 2px solid #e83900;
+}
+.table-class {
+  border-collapse: collapse;
+}
+.table-class th p {
+  margin: 0;
+}
+.table-class th {
+  background: red;
+}
+.table-class td p {
+  margin: 0;
+}
+.table-class th,
+.table-class td {
+  padding: 4px;
+}
+.temp-color {
+  background: #ccc;
+}
+
+/* @media screen and (max-width: 480px) {
+  .mainc {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+  }
+} */
